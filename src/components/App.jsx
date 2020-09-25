@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TodoItem from "./TodoItem"
 
 function App() {
 
@@ -32,7 +33,8 @@ function App() {
       <div>
         <ul>
         {items.map(item => (
-            <li>{item}</li>
+            <TodoItem
+            text={item}/>
           ))}
         </ul>
       </div>
